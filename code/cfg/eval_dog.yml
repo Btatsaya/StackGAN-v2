@@ -1,7 +1,7 @@
 CONFIG_NAME: '3stages_color'
 
-DATASET_NAME: 'church_outdoor'  # cat, dog, bedroom, church_outdoor
-DATA_DIR: '../data/lsun'  # imagenet, lsun
+DATASET_NAME: 'bedroom'  # cat, dog, bedroom, church_outdoor
+DATA_DIR: '../data/'  # imagenet, lsun
 GPU_ID: '3'
 WORKERS: 4  # 4
 
@@ -15,9 +15,9 @@ TEST:
 
 TRAIN:
     FLAG: False
-    NET_G: '../models/dog_3stages_color/netG_600000.pth'
+#    NET_G: '../models/dog_3stages_color/netG_600000.pth'
 #    NET_G: '../models/cat_3stages_color/netG_200000.pth'
-#    NET_G: '../models/bedroom_3stages_color/netG_364000.pth'
+    NET_G: '../models/bedroom_3stages_color/netG_364000.pth'
 #    NET_G: '../models/church_outdoor_3stages_color/netG_270000.pth'
     BATCH_SIZE: 24
 
