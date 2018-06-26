@@ -17,7 +17,7 @@ from miscc.config import cfg
 from miscc.utils import mkdir_p
 
 from tensorboard import summary
-from tensorboard import FileWriter
+#from tensorboard import FileWriter
 
 from model import G_NET, D_NET64, D_NET128, D_NET256, D_NET512, D_NET1024, INCEPTION_V3
 
